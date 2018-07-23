@@ -5,14 +5,14 @@ fodder for cattle etc. It also has to be mentioned that palm oil is the most wid
 It is necessary to plan well during cultivation and to monitor different aspects of trees like proper inventory, health, size, heights etc., at different stages of their life.  
 As palm tree cultivation zones are huge and difficult to be monitored visually on ground, images analysis can play a vital role in delivering those data and analysis, cost and labor efficiently from the satellite or aerial images.
 
-![myimg](figs/sat.png)
+![myimg](/figs/sat.png)
 
 
 
 ## Project Objective
 This project investigates on one aspect, more specifically **localizing and counting palm trees** for creating their inventory, as an initial step towards the multifaceted monitoring.
 
-![myimg](figs/intro.jpg)
+![myimg](/figs/intro.jpg)
 
 
 ## Dataset and Processing
