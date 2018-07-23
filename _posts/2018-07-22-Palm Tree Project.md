@@ -5,14 +5,14 @@ fodder for cattle etc. It also has to be mentioned that palm oil is the most wid
 It is necessary to plan well during cultivation and to monitor different aspects of trees like proper inventory, health, size, heights etc., at different stages of their life.  
 As palm tree cultivation zones are huge and difficult to be monitored visually on ground, images analysis can play a vital role in delivering those data and analysis, cost and labor efficiently from the satellite or aerial images.
 
-![myimg](/figs/sat.png)
+![myimg](figs/sat.png)
 
 
 
 ## Project Objective
 This project investigates on one aspect, more specifically **localizing and counting palm trees** for creating their inventory, as an initial step towards the multifaceted monitoring.
 
-![myimg](/figs/intro.jpg)
+![myimg](figs/intro.jpg)
 
 
 ## Dataset and Processing
@@ -67,7 +67,7 @@ However, the major problem for blob detection its scalability.  For a much large
 The parameters have to be fine-tuned for versatile conditions. The calibration process is a pain in the neck, and we need manually check result picture by picture.  To make matters worse, blob detection is inherent computationally expensive and require a lot of time for running.
 
 >images have to be divided into small pieces and parameter has to be fine tuned depend on different situation.
-![myimg](/figs/blob.png)
+![myimg](figs/blob.png)
 
 
 
@@ -78,13 +78,13 @@ There are some researchers try to implement deep learning models to do this job.
 
 This is a nice approach, but this is way too much computationally expensive. There is a lot of waste because many overlap images share some information and during the training process, weights are not shared. The sliding window approach is now deprecated by the deep-learning community.  
 
-![myimg](/figs/CNN.png)
+![myimg](figs/CNN.png)
 
 
 
 ### **Fully-Connected Neural Network**
 The Fully-Connected Neural Network differs from CNN only by the connectivity at the last few layers. A nodes that are fully connected with every node in the next layer. This algorithm is the deep-learning benchmark for image segmentation task.
-![myimg](/figs/FCN-Lnet.png)
+![myimg](figs/FCN-Lnet.png)
 
 We have tried this method, and it turns out not to be the best solution. There some problems with this method. First, the number of parameters to be trained increase in the order of magnitude. Second, because of increasing parameters, this is also prone to imbalanced data pitfall. In other words, the model will predict all the pixel with the dominant class in the training dataset.
 
@@ -92,7 +92,7 @@ We have tried this method, and it turns out not to be the best solution. There s
 ### **U-Net Image Segmentation**
 
 <a herf ="https://arxiv.org/pdf/1505.04597.pdf">U-net </a>is a new architecture proposed in 2017.  The winning solution for 2018 kaggle data science bowl. It is widely used in medical image segmentation.  We implemented this method and get satisfactory results.
-![myimg](/figs/u-net-architecture.png)
+![myimg](figs/u-net-architecture.png)
 
 * some advantages of Unet:
 Satisfactory accuracy with proper training, enough dataset(hundreds of pics) and training time;
