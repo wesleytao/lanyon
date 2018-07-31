@@ -72,6 +72,7 @@ The parameters have to be fine-tuned for versatile conditions. The calibration p
 
 
 
+
 ### **Convolution Neural Network**
 
 There are some researchers try to implement deep learning models to do this job. The highlight of their works is to hand label the center of the palm tree and then use a sliding window to get many batches of paired training data. After preprocessing and training, the convolutional neural network will produce a confidence map for the locations of the center of a palm tree given a new image. In the end, they use local maxima suppression to narrow down the targets.
@@ -103,16 +104,14 @@ we can also use it to train multiple class.
 ## Evaluation and Results
 out-of-sample prediction
 * stage 1
+>
+![combined_stage1](figs/stage1/stage1_combined.png)
 
-![origin](figs/stage1/stage1.png)
-![label](figs/stage1/stage1_label.png)
-![pred](figs/stage1/stage1_pred.png)
 
 * stage 2
-![pred](figs/large.png)
-![pred](figs/zoom in.png)
+>
+![combined_stage2](figs/stage2/stage2_combined.png)
 
-![pred](figs/unet_post_process.png)
 
 * loss Function
   For a classification problem, binary cross entropy prefer neat and cleaner solution than mean squared error. We have tried both at stage one and found binary cross entropy is slightly better than mse.
